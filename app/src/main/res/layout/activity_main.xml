@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.beataliptak.think_a_number.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView_heart1"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:background="@drawable/heart2" />
+
+    <ImageView
+        android:id="@+id/imageView_heart2"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_toRightOf="@+id/imageView_heart1"
+        android:background="@drawable/heart2" />
+    <ImageView
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:id="@+id/imageView_heart3"
+        android:layout_toRightOf="@+id/imageView_heart2"
+        android:background="@drawable/heart2" />
+    <ImageView
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:id="@+id/imageView_heart4"
+        android:layout_toRightOf="@+id/imageView_heart3"
+        android:background="@drawable/heart2" />
+
+    <ImageView
+        android:id="@+id/imageView_heart5"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_toRightOf="@+id/imageView_heart4"
+        android:background="@drawable/heart2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_szoveg1"
+        android:text="Találd ki a számot!"
+        android:layout_margin="40dp"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView_heart3"/>
+
+    <Button
+        android:id="@+id/button_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/textView_szoveg1"
+        android:layout_centerVertical="true"
+        android:text="+" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_szam"
+        android:text="0"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/button_plus"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/button_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_szam"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="40dp"
+        android:text="Küldés" />
+
+    <Button
+        android:id="@+id/button_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="40dp"
+        android:text="Új játék" />
+</RelativeLayout>
